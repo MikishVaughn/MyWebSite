@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="packages\Microsoft.NetFramework.Analyzers.2.9.3\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('packages\Microsoft.NetFramework.Analyzers.2.9.3\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="packages\Microsoft.NetCore.Analyzers.2.9.3\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('packages\Microsoft.NetCore.Analyzers.2.9.3\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="packages\Microsoft.CodeQuality.Analyzers.2.9.3\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('packages\Microsoft.CodeQuality.Analyzers.2.9.3\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.3\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.3\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73BD3F99-CBCC-4227-8235-343D5C24F635}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44371</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.4</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\CountdownsController.vb" />
+    <Compile Include="Controllers\ImagesController.vb" />
+    <Compile Include="Controllers\InfoController.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions2.vb" />
+    <Compile Include="Helpers\Countdowns.vb" />
+    <Compile Include="Helpers\Easter.vb" />
+    <Compile Include="Helpers\Seasons.vb" />
+    <Compile Include="Helpers\SiteHelpers.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Categories\Backgrounds\000008.jpg" />
+    <Content Include="Content\Images\Categories\Backgrounds\000020-1.jpg" />
+    <Content Include="Content\Images\Categories\Backgrounds\000020-3.jpg" />
+    <Content Include="Content\Images\Categories\Backgrounds\Elephant.jpg" />
+    <Content Include="Content\Images\Categories\Backgrounds\main-bg.jpg" />
+    <Content Include="Content\Images\Categories\Cartoons\000001.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\AirForce.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Aleda.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\April.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Army.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Autumn.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Bridget.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Christmas.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Easter.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\elections.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Fathers.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Fred.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Halloween.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Heidi.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Independence.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Jefferson.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Labor.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Lincoln.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\MarineCorp.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\MartinLutherKing.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Mary.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Melissa.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Memorial.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Mike.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Mothers.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\NationalGuard.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Navy.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\New Years.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\NewYears.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Patricia.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\PattyKake.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Presidents.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Spring.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Stacy.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Steve.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Summer.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Thanksgiving.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Tina.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Valentines.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Veterans.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Washington.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\Winter.jpg" />
+    <Content Include="Content\Images\Categories\Fishing\000001.jpg" />
+    <Content Include="Content\Images\Categories\JeanMeeus\000001.jpg" />
+    <Content Include="Content\Images\Categories\JeanMeeus\000002a.jpg" />
+    <Content Include="Content\Images\Categories\JeanMeeus\000003.jpg" />
+    <Content Include="Content\Images\Categories\Jokes\000001.jpg" />
+    <Content Include="Content\Images\Categories\Memes\000001.jpg" />
+    <Content Include="Content\Images\Categories\NSFW\000001.jpg" />
+    <Content Include="Content\Images\Categories\Political\000001.jpg" />
+    <Content Include="Content\Images\Categories\Political\000034.jpg" />
+    <Content Include="Content\Images\Categories\Political\000035.JPG" />
+    <Content Include="Content\Images\Categories\Political\000036.jpg" />
+    <Content Include="Content\Images\Categories\Political\000037.jpg" />
+    <Content Include="Content\Images\Categories\Political\000038.jpg" />
+    <Content Include="Content\Images\Categories\Political\000039.jpg" />
+    <Content Include="Content\Images\Categories\Political\000040.jpg" />
+    <Content Include="Content\Images\Categories\Political\000041.jpg" />
+    <Content Include="Content\Images\Categories\Political\000042.jpg" />
+    <Content Include="Content\Images\Categories\Political\000043.jpg" />
+    <Content Include="Content\Images\Categories\Political\000044.jpg" />
+    <Content Include="Content\Images\Categories\Political\000045.jpg" />
+    <Content Include="Content\Images\Categories\Political\000046.jpg" />
+    <Content Include="Content\Images\Categories\Political\000047.jpg" />
+    <Content Include="Content\Images\Categories\Political\000048.jpg" />
+    <Content Include="Content\Images\Categories\Scentme\000001.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000001.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000002.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000003.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000004.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000005.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000006.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000007.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000008.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000009.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000010.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000011.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000012.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000013.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000014.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000015.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000016.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000017.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000018.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000019.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000020.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000021.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000022.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000023.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000024.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000025.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000026.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000027.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000028.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000029.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000030.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000031.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000032.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000033.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000034.jpg" />
+    <Content Include="Content\Images\Categories\Sunsets\000035.jpg" />
+    <Content Include="Content\Images\Categories\Totempole\000001.jpg" />
+    <Content Include="Content\Images\Categories\Totempole\000002.jpg" />
+    <Content Include="Content\Images\Categories\Wildlife\000001.jpg" />
+    <Content Include="Content\Images\Categories\Wildlife\000002.jpg" />
+    <Content Include="Content\Images\Categories\Wildlife\000003.jpg" />
+    <Content Include="Content\Images\Site\Icons\BlueSun_05_80x80.png" />
+    <Content Include="Content\Images\Site\LinkShares\404.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\404.png" />
+    <Content Include="Content\Images\Site\LinkShares\BlueSun1.png" />
+    <Content Include="Content\Images\Site\LinkShares\Christmas.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\Election2018.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\Election2018.png" />
+    <Content Include="Content\Images\Site\LinkShares\elections.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\Illustrate_Welcome_1200x630.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\LakeCatatoga_Welcome_1200x630.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\More.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\More.png" />
+    <Content Include="Content\Images\Site\LinkShares\Santa-tg.png" />
+    <Content Include="Content\Images\Site\LinkShares\ScentMe_Welcome_1200x630.jpg" />
+    <Content Include="Content\Images\Site\LinkShares\Snowman_Scene.png" />
+    <Content Include="Content\Images\Site\LinkShares\Thanksgiving.png" />
+    <Content Include="Content\Images\Site\LinkShares\TheMikishGroup_Welcome_1200x630.jpg" />
+    <Content Include="Content\XML\Svg\Alone.svg" />
+    <Content Include="Content\XML\Svg\Site\404.svg" />
+    <Content Include="Content\XML\Svg\Site\Autumn1.svg" />
+    <Content Include="Content\XML\Svg\Site\Autumn2.svg" />
+    <Content Include="Content\XML\Svg\Site\Autumn3.svg" />
+    <Content Include="Content\XML\Svg\Site\Autumn4.svg" />
+    <Content Include="Content\XML\Svg\Site\Bat1.svg" />
+    <Content Include="Content\XML\Svg\Site\Bat2.svg" />
+    <Content Include="Content\XML\Svg\Site\Bat3.svg" />
+    <Content Include="Content\XML\Svg\Site\Bat4.svg" />
+    <Content Include="Content\XML\Svg\Site\BlueSun.svg" />
+    <Content Include="Content\XML\Svg\Site\Blue_Snowman.svg" />
+    <Content Include="Content\XML\Svg\Site\Blue_Snowman_003a.svg" />
+    <Content Include="Content\XML\Svg\Site\Christmas.svg" />
+    <Content Include="Content\XML\Svg\Site\Countdowns.svg" />
+    <Content Include="Content\XML\Svg\Site\Egg1.svg" />
+    <Content Include="Content\XML\Svg\Site\Egg2.svg" />
+    <Content Include="Content\XML\Svg\Site\Egg3.svg" />
+    <Content Include="Content\XML\Svg\Site\Egg4.svg" />
+    <Content Include="Content\XML\Svg\Site\Election2018.svg" />
+    <Content Include="Content\XML\Svg\Site\Election2018_lg.svg" />
+    <Content Include="Content\XML\Svg\Site\Election2018_sm.svg" />
+    <Content Include="Content\XML\Svg\Site\Elf.svg" />
+    <Content Include="Content\XML\Svg\Site\Elf1.svg" />
+    <Content Include="Content\XML\Svg\Site\Elf2.svg" />
+    <Content Include="Content\XML\Svg\Site\FB_Home.svg" />
+    <Content Include="Content\XML\Svg\Site\FB_Round.svg" />
+    <Content Include="Content\XML\Svg\Site\FB_Square.SVG" />
+    <Content Include="Content\XML\Svg\Site\Fishing.svg" />
+    <Content Include="Content\XML\Svg\Site\GitHub.svg" />
+    <Content Include="Content\XML\Svg\Site\GoHome.svg" />
+    <Content Include="Content\XML\Svg\Site\Google_Square.svg" />
+    <Content Include="Content\XML\Svg\Site\Heart1.svg" />
+    <Content Include="Content\XML\Svg\Site\Heart2.svg" />
+    <Content Include="Content\XML\Svg\Site\Heart3.svg" />
+    <Content Include="Content\XML\Svg\Site\Home.svg" />
+    <Content Include="Content\XML\Svg\Site\Humor.svg" />
+    <Content Include="Content\XML\Svg\Site\Info.svg" />
+    <Content Include="Content\XML\Svg\Site\Jack-O-Lantren.svg" />
+    <Content Include="Content\XML\Svg\Site\LaughingFace.svg" />
+    <Content Include="Content\XML\Svg\Site\Links.svg" />
+    <Content Include="Content\XML\Svg\Site\Memes.svg" />
+    <Content Include="Content\XML\Svg\Site\More.svg" />
+    <Content Include="Content\XML\Svg\Site\Next.svg" />
+    <Content Include="Content\XML\Svg\Site\Photos.svg" />
+    <Content Include="Content\XML\Svg\Site\Previous.svg" />
+    <Content Include="Content\XML\Svg\Site\Pumpkin.svg" />
+    <Content Include="Content\XML\Svg\Site\Retired.svg" />
+    <Content Include="Content\XML\Svg\Site\Santa-tg.svg" />
+    <Content Include="Content\XML\Svg\Site\Santa.svg" />
+    <Content Include="Content\XML\Svg\Site\Santa1.svg" />
+    <Content Include="Content\XML\Svg\Site\Santa2.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake1.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake2.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake3.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake4.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake5.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowflake6.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowman.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowman_L.svg" />
+    <Content Include="Content\XML\Svg\Site\Snowman_Scene.svg" />
+    <Content Include="Content\XML\Svg\Site\Sunglasses.svg" />
+    <Content Include="Content\XML\Svg\Site\The_Dark_Side_Of_The_Moon.svg" />
+    <Content Include="Content\XML\Svg\Site\The_Dark_Side_Of_The_Moon_Jagged.svg" />
+    <Content Include="Content\XML\Svg\Site\Turkey.svg" />
+    <Content Include="Content\XML\Svg\Site\Wildlife.svg" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Illustrate Net - Sub - GoDaddy.pubxml" />
+    <None Include="My Project\PublishProfiles\Lake Catatoga - Sub - GoDaddy.pubxml" />
+    <None Include="My Project\PublishProfiles\Scent Me - Sub - GoDaddy.pubxml" />
+    <None Include="My Project\PublishProfiles\TheMikishGroup - Root - GoDaddy.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\sitescripts.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Countdowns\Countdowns.vbhtml" />
+    <Content Include="Views\Countdowns\EventsMenu.vbhtml" />
+    <Content Include="Views\Images\Humor.vbhtml" />
+    <Content Include="Views\Images\Photos.vbhtml" />
+    <Content Include="Views\Images\Snow1.vbhtml" />
+    <Content Include="Views\Images\Snow2.vbhtml" />
+    <Content Include="Views\Images\Snow3.vbhtml" />
+    <Content Include="Views\Images\Snow4.vbhtml" />
+    <Content Include="Views\Images\Snow5.vbhtml" />
+    <Content Include="Views\Images\SvgFiles.vbhtml" />
+    <Content Include="Views\Info\About.vbhtml" />
+    <Content Include="Views\Info\Contact.vbhtml" />
+    <Content Include="Views\Info\Elephant.vbhtml" />
+    <Content Include="Views\Info\Links.vbhtml" />
+    <Content Include="Views\Info\More.vbhtml" />
+    <Content Include="Views\Info\PrivacyPolicy.vbhtml" />
+    <Content Include="Views\Info\TermsofService.vbhtml" />
+    <Content Include="Views\Shared\About\_About_illustrate.vbhtml" />
+    <Content Include="Views\Shared\About\_About_lakecatatoga.vbhtml" />
+    <Content Include="Views\Shared\About\_About_mikish.vbhtml" />
+    <Content Include="Views\Shared\About\_About_scentme.vbhtml" />
+    <Content Include="Views\Shared\Aside\Menus\_Birthdays.vbhtml" />
+    <Content Include="Views\Shared\Aside\Menus\_Holidays.vbhtml" />
+    <Content Include="Views\Shared\Aside\Menus\_SnowAnimation.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_About.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_About_LakeCatatoga.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Airforce.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Army.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Jefferson.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Lincoln.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_MarineCorps.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_NationalGuard.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Navy.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_Washington.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Countdowns.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_EventsMenu.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Christmas.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Easter.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Elections.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Fathers.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Halloween.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Independence.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Labor.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_MartinLutherKing.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Memorial.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Mothers.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_NewYears.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Presidents.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Thanksgiving.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Valentines.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Holidays_Veterans.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor_Cartoons.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor_Jokes.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor_Memes.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor_NSFW.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Humor_Political.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Images_Snow1.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Images_Snow2.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Images_Snow3.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Images_Snow4.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Images_Snow5.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Info.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Info_SVGFiles.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Links.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos_Fishing.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos_Scentme.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos_Sunsets.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos_Wildlife.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Season_Autumn.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Season_Spring.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Season_Summer.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Season_Winter.vbhtml" />
+    <Content Include="Views\Shared\_Contact.vbhtml" />
+    <Content Include="Views\Shared\_Countdown.vbhtml" />
+    <Content Include="Views\Shared\_Elephant.vbhtml" />
+    <Content Include="Views\Shared\_ExtraEffects.vbhtml" />
+    <Content Include="Views\Shared\_Footer.vbhtml" />
+    <Content Include="Views\Shared\_Header.vbhtml" />
+    <Content Include="Views\Shared\_Images.vbhtml" />
+    <Content Include="Views\Shared\_LoginPartial.vbhtml" />
+    <Content Include="Views\Shared\_Menu.vbhtml" />
+    <Content Include="Views\Shared\_Nothing.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Shared\Error.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.3\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.3\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetCore.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.3\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44371/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.3\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.3\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeQuality.Analyzers.2.9.3\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeQuality.Analyzers.2.9.3\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetCore.Analyzers.2.9.3\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetCore.Analyzers.2.9.3\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.NetFramework.Analyzers.2.9.3\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NetFramework.Analyzers.2.9.3\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
