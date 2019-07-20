@@ -54,7 +54,7 @@ End Code
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Labor">Labor Day</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Veterans">Veteran's Day</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Halloween">Halloween</a></li>
-                    @*<li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Elections">Election Day</a></li>*@
+                    <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Elections">Election Day</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Thanksgiving">Thanksgiving</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Christmas">Christmas</a></li>
                 </ul>

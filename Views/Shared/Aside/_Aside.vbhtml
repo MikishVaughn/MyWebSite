@@ -120,12 +120,12 @@
         showLike = ""
         asideContent = "Aside/_Aside_Holidays_" + msg
     End If
-    'If msg = "Elections" Then
-    '    showContent = ""
-    '    showMain = "HIDDEN"
-    '    showLike = ""
-    '    asideContent = "Aside/_Aside_Holidays_" + msg
-    'End If
+    If msg = "Elections" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Holidays_" + msg
+    End If
     If msg = "Thanksgiving" Then
         showContent = ""
         showMain = "HIDDEN"

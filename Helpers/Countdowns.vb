@@ -59,6 +59,8 @@ Public Class Countdowns
                 Return CStr(eventYear) + "-11-11T00:00:00"
             Case "Halloween"
                 Return CStr(eventYear) + "-10-31T00:00:00"
+            Case "Elections"
+                Return CStr(2020) + "-11-03T00:00:00"
             Case "Christmas"
                 Return CStr(eventYear) + "-12-25T00:00:00"
         End Select
@@ -161,76 +163,19 @@ Public Class Countdowns
     <AllowAnonymous>
     Public Shared Function GetEventDate(eventMonth As Integer, eventWeek As Integer, eventDay As Integer) As String
         Dim eventYear As Integer = Date.UtcNow.Year
-
         Dim wkday As Integer = Weekday(Date.Parse(CStr(eventYear) + "-" + CStr(eventMonth) + "-" + CStr(8 - eventDay), System.Globalization.CultureInfo.InvariantCulture))
-        'Dim wkday As Integer = Weekday(Date.Parse(eventYear.ToString + "-" + eventMonth.ToString + "-" + (8 - eventDay).ToString))
-
         Dim eventDate As Date = Date.Parse(CStr(eventYear) + "-" + CStr(eventMonth) + "-" + CStr(1 + (7 * eventWeek) - wkday), System.Globalization.CultureInfo.InvariantCulture).ToUniversalTime
-        'Dim eventDate As Date = Date.Parse(eventYear.ToString + "-" + eventMonth.ToString + "-" + (1 + (7 * eventWeek) - wkday).ToString).ToUniversalTime
+
 
         If eventDate < Date.UtcNow Then
             eventYear = Date.UtcNow.Year + 1
-
             wkday = Weekday(Date.Parse(CStr(eventYear) + "-" + CStr(eventMonth) + "-" + CStr(8 - eventDay), System.Globalization.CultureInfo.InvariantCulture))
-            'wkday = Weekday(Date.Parse(eventYear.ToString + "-" + eventMonth.ToString + "-" + (8 - eventDay).ToString))
-
             eventDate = Date.Parse(CStr(eventYear) + "-" + CStr(eventMonth) + "-" + CStr(1 + (7 * eventWeek) - wkday), System.Globalization.CultureInfo.InvariantCulture).ToUniversalTime
-            'eventDate = Date.Parse(eventYear.ToString + "-" + eventMonth.ToString + "-" + (1 + (7 * eventWeek) - wkday).ToString).ToUniversalTime
         End If
 
         Return CStr(eventDate.Year) + "-" + Right("00" + CStr(eventDate.Month), 2) + "-" + Right("00" + CStr(eventDate.Day), 2) + "T00:00:00"
-        'Return eventDate.Year.ToString + "-" + Right("00" + eventDate.Month.ToString, 2) + "-" + Right("00" + eventDate.Day.ToString, 2) + "T00:00:00"
 
     End Function
-
-    ' Convert from Julian - (Not Used)
-    '<AllowAnonymous>
-    'Public Shared Function FromJulian(julianDate As Double) As Date
-
-    '    Dim dblA, dblB, dblC, dblD, dblE, dblF As Double
-    '    Dim dblZ, dblW, dblX As Double
-    '    Dim Day, Month, Year As Integer
-    '    Dim convertedDate As Date
-    '    Try
-    '        dblZ = Math.Floor(julianDate + 0.5)
-    '        dblW = Math.Floor((dblZ - 1867216.25) / 36524.25)
-    '        dblX = Math.Floor(dblW / 4)
-    '        dblA = dblZ + 1 + dblW - dblX
-    '        dblB = dblA + 1524
-    '        dblC = Math.Floor((dblB - 122.1) / 365.25)
-    '        dblD = Math.Floor(365.25 * dblC)
-    '        dblE = Math.Floor((dblB - dblD) / 30.6001)
-    '        dblF = Math.Floor(30.6001 * dblE)
-
-    '        Day = Convert.ToInt32(dblB - dblD - dblF)
-    '        If (dblE > 13) Then
-    '            Month = Convert.ToInt32(dblE - 13)
-    '        Else
-    '            Month = Convert.ToInt32(dblE - 1)
-    '        End If
-    '        If ((Month = 1) Or (Month = 2)) Then
-    '            Year = Convert.ToInt32(dblC - 4715)
-    '        Else
-    '            Year = Convert.ToInt32(dblC - 4716)
-    '        End If
-    '        convertedDate = New DateTime(Year, Month, Day)
-
-    '        Dim calculateHour As String = julianDate.ToString()
-    '        Dim seconds As Double = 0
-    '        seconds += (Double.Parse(calculateHour.Substring(calculateHour.IndexOf(",") + 1, 1)) * 8640)
-    '        seconds += (Double.Parse(calculateHour.Substring(calculateHour.IndexOf(",") + 2, 1)) * 864)
-    '        seconds += (Double.Parse(calculateHour.Substring(calculateHour.IndexOf(",") + 3, 1)) * 86.4)
-    '        seconds += (Double.Parse(calculateHour.Substring(calculateHour.IndexOf(",") + 4, 1)) * 8.64)
-    '        seconds += (Double.Parse(calculateHour.Substring(calculateHour.IndexOf(",") + 5, 1)) * 0.864)
-
-    '        convertedDate = convertedDate.AddSeconds(seconds)
-    '    Catch ex As Exception
-    '        Throw
-    '    End Try
-
-    '    Return convertedDate
-
-    'End Function
 
     Public Overrides Function ToString() As String
         Return MyBase.ToString()

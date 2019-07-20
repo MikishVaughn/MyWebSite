@@ -161,7 +161,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="GlobalSuppressions2.vb" />
+    <Compile Include="GlobalSuppressions.vb" />
     <Compile Include="Helpers\Countdowns.vb" />
     <Compile Include="Helpers\Easter.vb" />
     <Compile Include="Helpers\Seasons.vb" />

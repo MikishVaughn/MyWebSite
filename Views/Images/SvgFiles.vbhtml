@@ -268,11 +268,11 @@ End Code
                         <img style="Text-align: center; height:600px; width: 600px;" src="~/Content/XML/Svg/Site/Election2018_sm.Svg" /> <span>Blue Wave</span>
                     </Button>
                 </li>
-                @*<li class="links-menu__item">
+                <li class="links-menu__item">
                         <Button id="openTab" onclick="newTab('../Content/XML/Svg/Site/Election2018_lg.Svg')">
                             <img style="height:150px; width:300px;" src="~/Content/XML/Svg/Site/Election2018_lg.Svg" /> <span>Fishy Elections</span>
                         </Button>
-                    </li>*@
+                    </li>
             </ul>
         </div>
 
