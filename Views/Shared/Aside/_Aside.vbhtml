@@ -194,7 +194,7 @@
         showContent = ""
         showMain = "HIDDEN"
         showLike = ""
-        asideContent = "Aside/_Aside_Photos_Scentme"
+        asideContent = "Aside/_Aside_Photos_ScentMe"
     End If
 
     ' Birthdays

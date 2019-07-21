@@ -17,6 +17,7 @@
     If siteName = "Lake Catatoga" Then
         IsHidden_Catatoga = "HIDDEN"
     End If
+
     Dim IsHidden_ScentMe As String = ""
     If siteName = "Scent Me" Then
         IsHidden_ScentMe = "HIDDEN"
@@ -60,17 +61,7 @@ End Code
                     <li class="site-footer__item"><a class="nav-link" href="~/Info/TermsOfService">Terms of Service</a></li>
                 </ul>
             </div>
-
-            @*<div class="site-footer__module">
-                <h6 class="site-footer__header">Other sites</h6>
-
-                <ul>
-                    <li @IsHidden_Mikish class="site-footer__item"><a class="nav-link" href="http://Mikish.com">The Mikish Group</a></li>
-                    <li @IsHidden_Catatoga class="site-footer__item"><a class="nav-link" href="http://Lakecatatoga.com">Lake Catatoga</a></li>
-                    <li @IsHidden_Illustrate class="site-footer__item"><a class="nav-link" href="http://illustrate.net">Illustrate Net</a></li>
-                    <li @IsHidden_ScentMe class="site-footer__item"><a class="nav-link" href="http://scentme.com">Scent Me</a></li>
-                </ul>
-            </div>*@
+           
         </div>
         <div class="site-footer__module site-footer__module--secondary" style="color:#f2f2f2; background-color: chocolate; margin: 0; padding: 0; width: 100%;">
             <h6 style="text-align: center; margin: 0; padding: 5px 10px 12px 5px; color: white; text-shadow: 0px 0px 2px black;">

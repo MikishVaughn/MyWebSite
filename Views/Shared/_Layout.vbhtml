@@ -24,7 +24,7 @@
     Dim ogDescription As String = siteDescription
 
     ' Info
-    canonical = siteURL + "/Info/" + Msg
+
 
     If Msg = "About" Or
         Msg = "Contact" Or
@@ -35,6 +35,7 @@
         ogDescription = Msg
         backgroundColor = "black"
         ogImage = SiteHelpers.GetSiteInfo("LinkShare")
+        canonical = siteURL + "/Info/" + Msg
 
     End If
 
@@ -44,6 +45,7 @@
         ogDescription = siteName
         backgroundColor = "chocolate"
         ogImage = SiteHelpers.GetImageLocation() + "Site/LinkShares/More.jpg"
+        canonical = siteURL + "/Info/" + Msg
 
     End If
 
@@ -53,50 +55,53 @@
         ogDescription = "A poem from American poet John Godfrey Saxe written In 1836. The parable Of the blind men And an elephant originated In the ancient Indian subcontinent, from where it has been widely diffused. This story was first mentioned In the Udana, under Tittha Sutta (Ud. 6.4)."
         backgroundColor = "transparent"
         ogImage = SiteHelpers.GetImageLocation() + "Categories/Background/" + Msg + ".jpg"
+        canonical = siteURL + "/Info/" + Msg
 
     End If
 
     'Images
-    canonical = siteURL + "/Images/" + Msg
-    ogImage = SiteHelpers.GetImageLocation() + "Categories/" + Msg + "/000001.jpg"
     If Msg = "Sunsets" Then
 
         ogTitle = "Beautiful Sunsets!"
         ogDescription = "Lake Catatoga Sunsets"
+        canonical = siteURL + "/Images/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/" + Msg + "/" + Right("000000" + SiteHelpers.MaxImages(Msg).ToString, 6) + ".jpg"
 
     End If
 
     If Msg = "Fishing" Or
         Msg = "Wildlife" Or
-        Msg = "SentMe" Then
+        Msg = "ScentMe" Then
 
         ogTitle = siteURL + " " + Msg
         ogDescription = Msg + " at " + siteName
+        canonical = siteURL + "/Images/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/" + Msg + "/" + Right("000000" + SiteHelpers.MaxImages(Msg).ToString, 6) + ".jpg"
 
     End If
 
     'Humor
     If Msg = "Humor" Or
-        Msg = "Cartoons" Or
-        Msg = "Political" Or
-        Msg = "Memes" Or
-        Msg = "Jokes" Or
-        Msg = "NSFW" Then
+Msg = "Cartoons" Or
+Msg = "Political" Or
+Msg = "Memes" Or
+Msg = "Jokes" Or
+Msg = "NSFW" Then
 
         ogTitle = siteURL + " " + Msg
-        ogDescription = Msg + "Humor at " + siteName
-        ogImage = SiteHelpers.GetImageLocation() + "Categories/Cartoons/" + Right("000000" + SiteHelpers.MaxImages("Cartoons").ToString, 6) + ".jpg"
+        ogDescription = Msg + " at " + siteName
+        canonical = siteURL + "/Images/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/" + Msg + "/" + Right("000000" + SiteHelpers.MaxImages(Msg).ToString, 6) + ".jpg"
 
     End If
 
     ' Countdowns
-    canonical = siteURL + "/Countdowns/" + Msg
-    ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
-
     If Msg = "EventsMenu" Then
 
         ogTitle = "Event Countdowns"
         ogDescription = "Days until the start of popular Events"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
 
@@ -109,6 +114,8 @@
         ogTitle = "Days until " + Msg
         ogDescription = "Days until the start of " + Msg
         backgroundColor = "transparent"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
 
@@ -138,6 +145,8 @@
         ogTitle = Msg + "'s Birthday"
         ogDescription = "Countdown until the BIG Day!"
         backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
 
@@ -155,6 +164,8 @@
         ogTitle = Msg + " Day"
         ogDescription = "Countdown until" + Msg + " Day!"
         backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
 
@@ -168,6 +179,8 @@
         ogTitle = Msg + " Day"
         ogDescription = "Countdown until " + Msg + " Day!"
         backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
 
@@ -182,7 +195,7 @@ End Code
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
     <title>@siteName</title>
-    @*<link rel="icon" href="/favicon.ico" type="image/x-icon" />*@
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
     <link rel="canonical" href="@canonical" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -191,14 +204,14 @@ End Code
     <meta name="description" content="@ogDescription" />
     <meta property="fb:admins" content="@fbAdmins" />
     <meta property="fb:app_id" content="@fbAppID" />
-    <meta property="og:title" content="@ogTitle" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="@ogSite_Name" />
     <meta property="og:url" content="@ogURL" />
-    <meta property="og:image" content="@ogImage" />
+    <meta property="og:image:url" content="@ogImage" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:site_name" content="@ogSite_Name" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:title" content="@ogTitle" />
     <meta property="og:description" content="@ogDescription" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="photo" />
@@ -239,8 +252,8 @@ End Code
 <body style="background-color: black; overflow-y: scroll;">
 
     <!-- Load Facebook SDK for JavaScript -->
-    @*<div id="fb-root"></div>*@
-    @*<script>
+    <div id="fb-root"></div>
+    <script>
     (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -249,7 +262,7 @@ End Code
             js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=@fbAppID&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>*@
+    </script>
 
     @Html.Partial("_Header")
 

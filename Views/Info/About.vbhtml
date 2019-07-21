@@ -12,7 +12,7 @@
             siteAbout = "About/_About_mikish"
 
         Case "Scent Me"
-            siteAbout = "About/_About_scentme"
+            siteAbout = "About/_About_ScentMe"
     End Select
 End Code
 

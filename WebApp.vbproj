@@ -203,47 +203,132 @@
     <Content Include="Content\Images\Categories\Backgrounds\Elephant.jpg" />
     <Content Include="Content\Images\Categories\Backgrounds\main-bg.jpg" />
     <Content Include="Content\Images\Categories\Cartoons\000001.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\AirForce.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Aleda.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\April.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Army.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Autumn.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Bridget.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Christmas.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Easter.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\elections.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Fathers.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Fred.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Halloween.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Heidi.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Independence.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Jefferson.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Labor.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Lincoln.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\MarineCorp.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\MartinLutherKing.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Mary.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Melissa.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Memorial.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Mike.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Mothers.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\NationalGuard.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Navy.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\New Years.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\NewYears.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Patricia.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\PattyKake.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Presidents.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Spring.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Stacy.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Steve.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Summer.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Thanksgiving.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Tina.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Valentines.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Veterans.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Washington.jpg" />
-    <Content Include="Content\Images\Categories\Countdowns\Winter.jpg" />
+    <Content Include="Content\Images\Categories\Countdowns\AirForce.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Aleda.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\April.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Army.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Autumn.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Bridget.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Christmas.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Easter.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Elections.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\EventsMenu.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Fathers.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Fred.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Halloween.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Heidi.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Independence.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Jefferson.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Labor.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Lincoln.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\MarineCorp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\MartinLutherKing.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Mary.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Melissa.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Memorial.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Mike.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Mothers.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\NationalGuard.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Navy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\New Years.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\NewYears.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Patricia.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\PattyKake.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Presidents.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Spring.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Stacy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Steve.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Summer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Thanksgiving.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Tina.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Valentines.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Veterans.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Washington.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Categories\Countdowns\Winter.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Images\Categories\Fishing\000001.jpg" />
     <Content Include="Content\Images\Categories\JeanMeeus\000001.jpg" />
     <Content Include="Content\Images\Categories\JeanMeeus\000002a.jpg" />
@@ -267,7 +352,7 @@
     <Content Include="Content\Images\Categories\Political\000046.jpg" />
     <Content Include="Content\Images\Categories\Political\000047.jpg" />
     <Content Include="Content\Images\Categories\Political\000048.jpg" />
-    <Content Include="Content\Images\Categories\Scentme\000001.jpg" />
+    <Content Include="Content\Images\Categories\ScentMe\000001.jpg" />
     <Content Include="Content\Images\Categories\Sunsets\000001.jpg" />
     <Content Include="Content\Images\Categories\Sunsets\000002.jpg" />
     <Content Include="Content\Images\Categories\Sunsets\000003.jpg" />
@@ -454,10 +539,10 @@
     <Content Include="Views\Info\More.vbhtml" />
     <Content Include="Views\Info\PrivacyPolicy.vbhtml" />
     <Content Include="Views\Info\TermsofService.vbhtml" />
-    <Content Include="Views\Shared\About\_About_illustrate.vbhtml" />
-    <Content Include="Views\Shared\About\_About_lakecatatoga.vbhtml" />
-    <Content Include="Views\Shared\About\_About_mikish.vbhtml" />
-    <Content Include="Views\Shared\About\_About_scentme.vbhtml" />
+    <Content Include="Views\Shared\About\_About_Illustrate.vbhtml" />
+    <Content Include="Views\Shared\About\_About_LakeCatatoga.vbhtml" />
+    <Content Include="Views\Shared\About\_About_Mikish.vbhtml" />
+    <Content Include="Views\Shared\About\_About_ScentMe.vbhtml" />
     <Content Include="Views\Shared\Aside\Menus\_Birthdays.vbhtml" />
     <Content Include="Views\Shared\Aside\Menus\_Holidays.vbhtml" />
     <Content Include="Views\Shared\Aside\Menus\_SnowAnimation.vbhtml" />
@@ -505,7 +590,7 @@
     <Content Include="Views\Shared\Aside\_Aside_Links.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Photos.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Photos_Fishing.vbhtml" />
-    <Content Include="Views\Shared\Aside\_Aside_Photos_Scentme.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Photos_ScentMe.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Photos_Sunsets.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Photos_Wildlife.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Season_Autumn.vbhtml" />

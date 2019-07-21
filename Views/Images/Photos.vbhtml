@@ -14,7 +14,7 @@
     If ViewData("message") = "Wildlife" Then
         choice03 = "active"
     End If
-    If ViewData("message") = "Scentme" Then
+    If ViewData("message") = "ScentMe" Then
         choice04 = "active"
     End If
 End Code
