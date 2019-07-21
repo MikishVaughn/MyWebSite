@@ -19,18 +19,6 @@ End Code
     </div>
     <br />
 
-    @*<p>
-        <b>Like</b> Bridget's Facebook Memes and <b>Share</b> with friends, or use the picture's share button to share the selected meme to Facebook.
-    </p>    
-    <div class="fb-like"
-         style="height: 30px;
-         padding-top: 5px;"
-         data-layout="button"
-         data-action="like"
-         data-show-faces="false"
-         data-share="true">
-    </div>*@
-
 </div>
 
 <!-- More Humor Choices -->

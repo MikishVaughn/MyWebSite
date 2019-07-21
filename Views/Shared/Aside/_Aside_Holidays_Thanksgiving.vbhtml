@@ -18,18 +18,6 @@
         <button title="Reference" id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Thanksgiving')">More...(Wikipedia)</button>
     </h6>
     <br />
-    
-    @*<p style="color: black;">
-        <b>Like</b> the <b>Thanksgiving</b> Countdown and share on Facebook with friends.
-    </p>
-    <div class="fb-like"
-         style="height: 30px;
-         padding-top: 5px;"
-         data-layout="button"
-         data-action="like"
-         data-show-faces="false"
-         data-share="true">
-    </div>*@
 
 </div>
 

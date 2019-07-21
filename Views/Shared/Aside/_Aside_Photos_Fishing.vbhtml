@@ -11,18 +11,6 @@ End Code
     </p>
     <br />
 
-    @*<p style="color: black;">
-        <b>Like</b> the <b>Fishing</b> Photos page And share With friends, Or use the picture's share button to just share the selected photo on Facebook.
-    </p>
-    <div Class="fb-like"
-         style="height: 30px;
-         padding-top: 5px;"
-         data-layout="button"
-         data-action="like"
-         data-show-faces="false"
-         data-share="true">
-    </div>*@
-
 </div>
 
 <!-- More images Choices -->

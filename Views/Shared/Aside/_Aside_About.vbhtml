@@ -25,7 +25,7 @@ End Code
                     <b>Welcome, and enjoy browsing!</b>
                 </p>
                 <p style="color: black;">
-                    The purpose of this site is <b>entertainment</b>; <i>our</i> fun is from developing the website, while <i>you</i> might enjoy looking through the images in the <a style="color: black;" href="/Images/Photos">Photos</a> and <a style="color: black;" href="/Images/Humor">Humor</a> sections, as well as from taking advantage of the Event <a style="color: black;" href="/Countdowns/Countdowns">Countdowns</a>.
+                    The purpose of this site is <b>entertainment</b>; <i>our</i> fun is from developing the website, while <i>you</i> might enjoy looking through the images in the <a style="color: black;" href="/Images/Photos">Photos</a> and <a style="color: black;" href="/Images/Humor">Humor</a> sections as well as from taking advantage of the Event <a style="color: black;" href="/Countdowns/Countdowns">Countdowns</a>.
                 </p>
                 <p style="color: black;">
                     &bull; <b><a style="color: black;" href="/Images/Photos">Photos</a></b> contains a small, but growing selection of interesting pictures taken by our friends, or found on the Internet.
