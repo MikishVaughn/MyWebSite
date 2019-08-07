@@ -7,46 +7,6 @@
     Dim asideContent As String = "Aside/_Aside_About"
     Dim showContent As String = "HIDDEN"
 
-    ' Snow Files
-    If msg = "Snow1" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Images_Snow1"
-    End If
-    If msg = "Snow2" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Images_Snow2"
-    End If
-    If msg = "Snow3" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Images_Snow3"
-    End If
-    If msg = "Snow4" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Images_Snow4"
-    End If
-    If msg = "Snow5" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Images_Snow5"
-    End If
-
-    ' SVG Files
-    If msg = "SvgFiles" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Info_SvgFiles"
-    End If
-
     ' Holidays
     If msg = "New Years" Then
         showContent = ""
@@ -190,7 +150,7 @@
         showLike = ""
         asideContent = "Aside/_Aside_Photos_Fishing"
     End If
-    If msg = "Scentme" Then
+    If msg = "ScentMe" Then
         showContent = ""
         showMain = "HIDDEN"
         showLike = ""
@@ -301,6 +261,46 @@
         If LCase(siteName).Contains("catatoga") Then
             asideContent = "Aside/_Aside_About_LakeCatatoga"
         End If
+    End If
+
+    ' Snow Files
+    If msg = "Snow1" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Images_Snow1"
+    End If
+    If msg = "Snow2" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Images_Snow2"
+    End If
+    If msg = "Snow3" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Images_Snow3"
+    End If
+    If msg = "Snow4" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Images_Snow4"
+    End If
+    If msg = "Snow5" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Images_Snow5"
+    End If
+
+    ' SVG Files
+    If msg = "SvgFiles" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Info_SvgFiles"
     End If
 
     If LCase(SiteHelpers.RootUrl).Contains("localhost") Then

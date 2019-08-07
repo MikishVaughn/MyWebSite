@@ -81,12 +81,11 @@
     End If
 
     'Humor
-    If Msg = "Humor" Or
-Msg = "Cartoons" Or
-Msg = "Political" Or
-Msg = "Memes" Or
-Msg = "Jokes" Or
-Msg = "NSFW" Then
+    If Msg = "Cartoons" Or
+        Msg = "Political" Or
+        Msg = "Memes" Or
+        Msg = "Jokes" Or
+        Msg = "NSFW" Then
 
         ogTitle = siteURL + " " + Msg
         ogDescription = Msg + " at " + siteName
@@ -101,7 +100,7 @@ Msg = "NSFW" Then
         ogTitle = "Event Countdowns"
         ogDescription = "Days until the start of popular Events"
         canonical = siteURL + "/Countdowns/" + Msg
-        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/Events.jpg"
 
     End If
 
