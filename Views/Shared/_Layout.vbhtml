@@ -161,7 +161,7 @@
         Msg = "Halloween" Then
 
         ogTitle = Msg + " Day"
-        ogDescription = "Countdown until" + Msg + " Day!"
+        ogDescription = "Countdown until " + Msg + " Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
         ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"

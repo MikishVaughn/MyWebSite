@@ -24,7 +24,7 @@
         </p>
     </div>
     <p id="Aside_P">
-        We've created an easily reusable <b>VB MVC Web App</b> fitting well on phones, tablets, and desktops, plus we're constantly adding more multi-platform 'content providing' features. This is the lite version of same framework used in our application tracking and accounting software packages.
+        We've created a reusable <b>VB MVC Web App</b> fitting well on phones, tablets, and desktops, plus we're constantly adding more multi-platform 'content providing' features. This is the lite version of same framework used in our application tracking and accounting software packages.
     <p>
         All of the site's sections are <b>just for fun</b> and contain content from various members and friends (more content welcome). The <a href="/Countdowns/Countdowns">Events</a> were technical fun for us, because some Events like the Seasons have annually varying dates and time, but the correct time has to be displayed regardless of the Event, the viewer's time zone, and whether Daylight Savings Time is used.
     </p>
