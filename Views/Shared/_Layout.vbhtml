@@ -183,6 +183,15 @@
 
     End If
 
+    If Msg = "Legalization" Then
+        ogTitle = "Cannabis in Illinois"
+        ogDescription = "Countdown until Cannabis is legal in Illinois"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+
     ogURL = canonical
 
 End Code

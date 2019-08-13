@@ -115,6 +115,9 @@
         If eventName = "Stacy" Then
             eventName = "Stacy's Birthday"
         End If
+        If eventName = "Legalization" Then
+            eventName = "Cannabis in Illinois"
+        End If
     End If
 
     Dim ExtraEffects As String = "_Nothing"

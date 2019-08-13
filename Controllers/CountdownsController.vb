@@ -118,6 +118,13 @@
     End Function
 
     <HttpGet>
+    Function Legalization() As ActionResult
+        ViewData("Message") = "Legalization"
+        ViewData("PageHeader") = "Cannabis in Illinois"
+        Return View("_Countdown")
+    End Function
+
+    <HttpGet>
     Function Valentines() As ActionResult
         ViewData("Message") = "Valentines"
         ViewData("PageHeader") = "Countdown..."

@@ -9,8 +9,12 @@
 <div class="goldGradient">
     <nav class="navbar navbar-expand">
         <ul class="navbar-nav">
-            <li class="nav-line"><a class="nav-item aside-nav-item" href="~/countdowns/NewYears">New Years</a></li>
-            <li class="nav-line"><a class="nav-item1 aside-nav-item" href="~/countdowns/MartinLutherKing">M.L. King Jr</a></li>
+            <li class="nav-line">
+                <a class="nav-item aside-nav-item" href="~/countdowns/NewYears">New Years</a>
+            </li>
+            <li class="nav-line">
+                <a class="nav-item1 aside-nav-item" href="~/countdowns/MartinLutherKing">M.L. King Jr</a>
+            </li>
         </ul>
     </nav>
     <nav class="navbar navbar-expand">
@@ -57,10 +61,7 @@
         <ul class="navbar-nav">
             <li class="nav-line">
                 <a class="nav-item1 aside-nav-item" href="~/countdowns/Veterans">Veterans</a>
-            </li>
-            @*<li class="nav-line">
-                    <a class="nav-item1 aside-nav-item" href="~/countdowns/Elections">Elections</a>
-            </li>*@
+            </li>            
             <li class="nav-line">
                 <a class="nav-item1 aside-nav-item" href="~/countdowns/Halloween">Halloween</a>
             </li>
@@ -77,5 +78,15 @@
                 <a class="nav-item1 aside-nav-item" href="~/countdowns/Christmas">Christmas</a>
             </li>
         </ul>
-    </nav>    
+    </nav>
+    <nav class="navbar navbar-expand">
+        <ul class="navbar-nav">
+            <li class="nav-line">
+                <a class="nav-item aside-nav-item" href="~/countdowns/Elections">Elections</a>
+            </li>
+            <li class="nav-line">
+                <a class="nav-item1 aside-nav-item" href="~/countdowns/Legalization">Legalization</a>
+            </li>
+        </ul>
+    </nav>
 </div>

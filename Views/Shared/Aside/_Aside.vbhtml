@@ -14,6 +14,12 @@
         showLike = ""
         asideContent = "Aside/_Aside_Holidays_NewYears"
     End If
+    If msg = "Legalization" Then
+        showContent = ""
+        showMain = "HIDDEN"
+        showLike = ""
+        asideContent = "Aside/_Aside_Holidays_Legalization"
+    End If
     If msg = "MartinLutherKing" Then
         showContent = ""
         showMain = "HIDDEN"

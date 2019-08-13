@@ -43,6 +43,7 @@ End Code
                 <h6 class="countdowns-menu__header">Holidays</h6>
                 <ul>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/NewYears">New Year's</a></li>
+                    <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Legalization">Legalization</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/MartinLutherKing">M.L. King Jr</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Valentines">Valentine Day</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Presidents">President Day</a></li>
