@@ -137,30 +137,30 @@ End Code
             <div id="whoKnows">
                 <!-- Event Name -->
                 <h2 id="EventName">@eventName</h2>
-
+                
                 <!-- Event Date -->
                 <h6 id="EventDate"></h6>
-               
-                    <!-- Days -->
-                    <h2 id="EventDays"></h2>
-                    <h6 id="lblEventDays"></h6>
 
-                    <!-- Hours, Minutes, and Seconds -->
-                    <div class="row">
+                <!-- Days -->
+                <h2 id="EventDays"></h2>
+                <h6 id="lblEventDays"></h6>
 
-                        <div class="col-4 center" style="min-width: 60px; text-align: center;">
-                            <h4 id="EventHours"></h4>
-                            <h6 id="lblEventHours"></h6>
-                        </div>
-                        <div class="col-4 center" style="min-width: 60px; text-align: center;">
-                            <h4 id="EventMinutes"></h4>
-                            <h6 id="lblEventMinutes"></h6>
-                        </div>
-                        <div class="col-4 center" style="min-width: 60px; text-align: center;">
-                            <h4 id="EventSeconds"></h4>
-                            <h6 id="lblEventSeconds"></h6>
-                        </div>
+                <!-- Hours, Minutes, and Seconds -->
+                <div class="row">
+
+                    <div class="col-4 center" style="min-width: 60px; text-align: center;">
+                        <h4 id="EventHours"></h4>
+                        <h6 id="lblEventHours"></h6>
                     </div>
+                    <div class="col-4 center" style="min-width: 60px; text-align: center;">
+                        <h4 id="EventMinutes"></h4>
+                        <h6 id="lblEventMinutes"></h6>
+                    </div>
+                    <div class="col-4 center" style="min-width: 60px; text-align: center;">
+                        <h4 id="EventSeconds"></h4>
+                        <h6 id="lblEventSeconds"></h6>
+                    </div>
+                </div>
             </div>
     </div>
     <div id="countdownWindowPadding">

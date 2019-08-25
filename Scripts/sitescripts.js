@@ -12,7 +12,7 @@ function updateCountdown(now, eventDate, eventType, seasonType, adjustDst) {
 
     // Check if this is the Event Date.
     if (eventDate.getMonth() === now.getMonth() && eventDate.getDate() === now.getDate()) {
-
+       
         // *** Today is the Event Day! ***//
 
         //  Update eventDate Display
@@ -69,7 +69,9 @@ function DateDiff(datePart, fromDate, toDate) {
     // Season Hour Adjustment for DST.
     if (Number(adjustDst) === Number(seasonType)) { diffMS = diffMS + one_hour; }
 
-    var d = eventType === 0 ? Math.floor(diffMS / one_day) : Math.floor(diffMS / one_day);
+    // Kludge: Why do I have to add two hours to the diffMS to get the Days to change at Midnight?
+    var d = eventType === 0 ? Math.floor((diffMS - (one_hour * 2)) / one_day) : Math.floor(diffMS / one_day);
+    
     var h = eventType === 0 ? 23 - fromDate.getHours() : Math.floor((diffMS - d * one_day) / one_hour);
     var m = eventType === 0 ? 59 - fromDate.getMinutes() : Math.floor((diffMS - (d * one_day + h * one_hour)) / one_minute);
     var s = eventType === 0 ? 59 - fromDate.getSeconds() : Math.floor((diffMS - (d * one_day + h * one_hour + m * one_minute)) / one_second);

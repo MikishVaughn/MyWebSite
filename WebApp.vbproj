@@ -554,7 +554,7 @@
     <Content Include="Views\Shared\Aside\_Aside_Birthday_Army.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Birthday_Jefferson.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Birthday_Lincoln.vbhtml" />
-    <Content Include="Views\Shared\Aside\_Aside_Birthday_MarineCorps.vbhtml" />
+    <Content Include="Views\Shared\Aside\_Aside_Birthday_MarineCorp.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Birthday_NationalGuard.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Birthday_Navy.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Birthday_Washington.vbhtml" />

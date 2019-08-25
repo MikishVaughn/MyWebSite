@@ -383,7 +383,8 @@ ul {
 }
 
 #EventName {
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 30px;
     font-weight: 400;
     padding-top: 10px;
 }
@@ -395,6 +396,7 @@ ul {
 
 #EventDays {
     font-size: 180px;
+    /*font-size: 150px;*/
     font-weight: 300;
 }
 
