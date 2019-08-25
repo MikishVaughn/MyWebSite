@@ -69,7 +69,7 @@ function DateDiff(datePart, fromDate, toDate) {
     // Season Hour Adjustment for DST.
     if (Number(adjustDst) === Number(seasonType)) { diffMS = diffMS + one_hour; }
 
-    // Kludge: Why do I have to add two hours to the diffMS to get the Days to change at Midnight?
+    // Kludge: Why do I have to subtract two hours to the diffMS to get the Days to change at Midnight?
     var d = eventType === 0 ? Math.floor((diffMS - one_hour * 2) / one_day) : Math.floor(diffMS / one_day);
     
     var h = eventType === 0 ? 23 - fromDate.getHours() : Math.floor((diffMS - d * one_day) / one_hour);
