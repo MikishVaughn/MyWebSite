@@ -67,20 +67,21 @@ End Code
                     @Html.AntiForgeryToken()
                     @<h6 class="countdowns-menu__header">Friend Birthdays</h6>
                     @<ul>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Aledia">Aledia (Mom)</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/April">April</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Bridget">Bridget</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Fred">Fred</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Heidi">Heidi</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Mary">Mary</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Melissa">Melissa</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Mike">Mikish</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/PattyKake">Patty Kake</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Patricia">Patricia</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Stacy">Stacy</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Steve">Steve</a></li>
-                        <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Tina">Tina</a></li>
-                    </ul>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Aleda">Aleda (Mom)</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/April">April</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Bridget">Bridget</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Fred">Fred</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Heidi">Heidi</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Mary">Mary</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Melissa">Melissa</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Mike">Mikish</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/PattyKake">Patty Kake</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Patricia">Patricia</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Stacy">Stacy</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Steve">Steve</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Tina">Tina</a></li>
+    <li class="countdowns-menu__item"><a Class="nav-link" href="~/countdowns/Terry">Terry</a></li>
+</ul>
                 End If
             </div>
 

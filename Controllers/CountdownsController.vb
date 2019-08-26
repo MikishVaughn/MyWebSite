@@ -40,8 +40,8 @@
 
     ' Birthdays
     <HttpGet>
-    Function Aledia() As ActionResult
-        ViewData("Message") = "Aledia"
+    Function Aleda() As ActionResult
+        ViewData("Message") = "Aleda"
         ViewData("PageHeader") = "Birthday Countdown..."
         Return View("_Countdown")
     End Function
@@ -70,6 +70,13 @@
     <HttpGet>
     Function Tina() As ActionResult
         ViewData("Message") = "Tina"
+        ViewData("PageHeader") = "Birthday Countdown..."
+        Return View("_Countdown")
+    End Function
+
+    <HttpGet>
+    Function Terry() As ActionResult
+        ViewData("Message") = "Terry"
         ViewData("PageHeader") = "Birthday Countdown..."
         Return View("_Countdown")
     End Function

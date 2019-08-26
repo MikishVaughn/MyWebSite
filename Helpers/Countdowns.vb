@@ -113,7 +113,7 @@ Public Class Countdowns
 
         ' Birthdays - Friends - (Date is Fixed)
         Select Case eventName
-            Case "Aledia"
+            Case "Aleda"
                 Return CStr(eventYear) + "-10-01T00:00:00"
             Case "April"
                 Return CStr(eventYear) + "-03-27T00:00:00"
@@ -139,6 +139,8 @@ Public Class Countdowns
                 Return CStr(eventYear) + "-06-09T00:00:00"
             Case "Stacy"
                 Return CStr(eventYear) + "-02-05T00:00:00"
+            Case "Terry"
+                Return CStr(eventYear) + "-09-22T00:00:00"
 
         End Select
 

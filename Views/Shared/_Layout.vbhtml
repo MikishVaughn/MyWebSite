@@ -119,7 +119,7 @@
     End If
 
     ' Birthdays
-    If Msg = "Aledia" Or
+    If Msg = "Aleda" Or
         Msg = "April" Or
         Msg = "Melissa" Or
         Msg = "Bridget" Or
@@ -132,6 +132,7 @@
         Msg = "Heidi" Or
         Msg = "Stacy" Or
         Msg = "Patricia" Or
+        Msg = "Terry" Or
         Msg = "Army" Or
         Msg = "Navy" Or
         Msg = "AirForce" Or
@@ -151,14 +152,14 @@
 
     ' Holidays
     If Msg = "Easter" Or
-        Msg = "Memorial" Or
-        Msg = "Independence" Or
-        Msg = "Labor" Or
-        Msg = "Veterans" Or
-        Msg = "Christmas" Or
-        Msg = "Thanksgiving" Or
-        Msg = "MartinLutherKing" Or
-        Msg = "Halloween" Then
+Msg = "Memorial" Or
+Msg = "Independence" Or
+Msg = "Labor" Or
+Msg = "Veterans" Or
+Msg = "Christmas" Or
+Msg = "Thanksgiving" Or
+Msg = "MartinLutherKing" Or
+Msg = "Halloween" Then
 
         ogTitle = Msg + " Day"
         ogDescription = "Countdown until " + Msg + " Day!"

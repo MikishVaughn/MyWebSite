@@ -52,8 +52,8 @@
         End If
 
         ' Cosmetic Fix for Birthday names
-        If eventName = "Aledia" Then
-            eventName = "Aledia's Birthday"
+        If eventName = "Aleda" Then
+            eventName = "Aleda's Birthday"
         End If
         If eventName = "April" Then
             eventName = "April's Birthday"
@@ -81,6 +81,9 @@
         End If
         If eventName = "Tina" Then
             eventName = "Tina's Birthday"
+        End If
+        If eventName = "Terry" Then
+            eventName = "Terry's Birthday"
         End If
         If eventName = "Lincoln" Then
             eventName = "Lincoln's Birthday"
