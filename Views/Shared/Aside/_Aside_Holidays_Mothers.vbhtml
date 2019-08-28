@@ -5,7 +5,7 @@
 </style>
 
 <div style="padding-left: 15px; padding-right: 15px;">
-    <h2>Mothers Day</h2>
+    <h2>Mother's Day</h2>
     <br />
     <p style="color: black;">
         Mother's Day is a celebration honoring the mother of the family, as well as motherhood, maternal bonds, and the influence of mothers in society. It is celebrated on various days in many parts of the world, most commonly in the months of March or May. It complements similar celebrations honoring family members, such as Father's Day, Siblings Day, and Grandparents Day.

@@ -5,7 +5,7 @@
 </style>
 
 <div style="padding-left: 15px; padding-right: 15px;">
-    <h2>Veterans Day</h2>
+    <h2>Veteran's Day</h2>
     <br />
     <p style="color: black;">
         Veterans Day is an official United States public holiday, observed annually on November 11, that honors military veterans; that is, persons who served in the United States Armed Forces. It coincides with other holidays, including Armistice Day and Remembrance Day, celebrated in other countries that mark the anniversary of the end of World War I; major hostilities of World War I were formally ended at the 11th hour of the 11th day of the 11th month of 1918, when the Armistice with Germany went into effect. The United States previously observed Armistice Day. The U.S. holiday was renamed Veterans Day in 1954.

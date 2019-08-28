@@ -45,10 +45,34 @@
             eventName = "Father's Day"
         End If
         If eventName = "MartinLutherKing" Then
-            eventName = "Martin Luther King Jr Day"
+            eventName = "Martin Luther King Jr"
         End If
         If eventName = "Presidents" Then
             eventName = "President's Day"
+        End If
+        If eventName = "Labor" Then
+            eventName = "Labor Day"
+        End If
+        If eventName = "Veterans" Then
+            eventName = "Veteran's Day"
+        End If
+        If eventName = "New Years" Then
+            eventName = "New Year's Day"
+        End If
+        If eventName = "Independence" Then
+            eventName = "Independence Day"
+        End If
+        If eventName = "Thanksgiving" Then
+            eventName = "Thanksgiving Day"
+        End If
+        If eventName = "Elections" Then
+            eventName = "Election Day"
+        End If
+        If eventName = "Memorial" Then
+            eventName = "Memorial Day"
+        End If
+        If eventName = "Christmas" Then
+            eventName = "Christmas Day"
         End If
 
         ' Cosmetic Fix for Birthday names

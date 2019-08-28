@@ -5,7 +5,7 @@
 </style>
 
 <div style="padding-left: 15px; padding-right: 15px;">
-    <h2>New Years Day</h2>
+    <h2>New Year's Day</h2>
     <br />
     <p style="color: black;">
         New Year's Day is probably the most celebrated public holiday, often observed with fireworks at the stroke of midnight as the new year starts in each time zone. Other global New Year's Day traditions include making New Year's resolutions and calling one's friends and family.

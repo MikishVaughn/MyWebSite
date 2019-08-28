@@ -5,7 +5,7 @@
 </style>
 
 <div style="padding-left: 15px; padding-right: 15px;">
-    <h2>Presidents Day</h2>
+    <h2>President's Day</h2>
     <br />
     <p style="color: black;">
         Presidents Day evolved from the celebration of George Washington's Birthday to a celebration of all past Presidents.
