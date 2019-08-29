@@ -25,14 +25,22 @@
 
     ' Info
 
-    If Msg = "About" Or
-Msg = "Contact" Or
-Msg = "Privacy Policy" Or
-Msg = "Terms of Service" Then
+    If Msg = "About" Then
 
         ogTitle = Msg + " " + siteName
         ogDescription = Msg
         backgroundColor = "black"
+        ogImage = SiteHelpers.GetSiteInfo("LinkShare")
+        canonical = siteURL + "/Info/" + Msg
+
+    End If
+    If Msg = "Privacy Policy" Or
+        Msg = "Terms of Service" Or
+        Msg = "Contact" Then
+
+        ogTitle = Msg + " " + siteName
+        ogDescription = Msg
+        backgroundColor = "chocolate"
         ogImage = SiteHelpers.GetSiteInfo("LinkShare")
         canonical = siteURL + "/Info/" + Msg
 
