@@ -25,11 +25,10 @@
 
     ' Info
 
-
     If Msg = "About" Or
-        Msg = "Contact" Or
-        Msg = "Privacy Policy" Or
-        Msg = "Terms of Service" Then
+Msg = "Contact" Or
+Msg = "Privacy Policy" Or
+Msg = "Terms of Service" Then
 
         ogTitle = Msg + " " + siteName
         ogDescription = Msg
@@ -152,14 +151,12 @@
 
     ' Holidays
     If Msg = "Easter" Or
-Msg = "Memorial" Or
-Msg = "Independence" Or
-Msg = "Labor" Or
-Msg = "Veterans" Or
-Msg = "Christmas" Or
-Msg = "Thanksgiving" Or
-Msg = "MartinLutherKing" Or
-Msg = "Halloween" Then
+        Msg = "Memorial" Or
+        Msg = "Independence" Or
+        Msg = "Labor" Or
+        Msg = "Christmas" Or
+        Msg = "Thanksgiving" Or
+        Msg = "Halloween" Then
 
         ogTitle = Msg + " Day"
         ogDescription = "Countdown until " + Msg + " Day!"
@@ -169,15 +166,73 @@ Msg = "Halloween" Then
 
     End If
 
-    If Msg = "New Years" Or
-        Msg = "Valentines" Or
-        Msg = "Presidents" Or
-        Msg = "Mothers" Or
-        Msg = "Fathers" Or
-        Msg = "Elections" Then
+    If Msg = "Veterans" Then
 
-        ogTitle = Msg + " Day"
-        ogDescription = "Countdown until " + Msg + " Day!"
+        ogTitle = "Veteran's Day"
+        ogDescription = "Countdown until Veteran's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "MartinLutherKing" Then
+
+        ogTitle = "Martin Luther King Day"
+        ogDescription = "Countdown until Martin Luther King Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "New Years" Then
+
+        ogTitle = "New Year's Day"
+        ogDescription = "Countdown until New Year's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "Valentines" Then
+
+        ogTitle = "Valentine's Day"
+        ogDescription = "Countdown until Valentine's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "Presidents" Then
+
+        ogTitle = "President's Day"
+        ogDescription = "Countdown until President's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "Mothers" Then
+
+        ogTitle = "Mother's Day"
+        ogDescription = "Countdown until Mother's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "Fathers" Then
+
+        ogTitle = "Father's Day"
+        ogDescription = "Countdown until Father's Day!"
+        backgroundColor = "black"
+        canonical = siteURL + "/Countdowns/" + Msg
+        ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
+    End If
+    If Msg = "Elections" Then
+
+        ogTitle = "Election Day"
+        ogDescription = "Countdown until Election Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
         ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
