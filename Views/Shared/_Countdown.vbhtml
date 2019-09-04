@@ -148,7 +148,7 @@
     End If
 
     Dim ExtraEffects As String = "_Nothing"
-    If eventName = "Winter" Or eventName = "Christmas" Or eventName = "Autumn (Fall)" Or eventName = "Halloween" Or eventName = "Valentine's Day" Or eventName = "April's Birthday" Or eventName = "Easter" Or eventName = "Thanksgiving" Then
+    If eventName = "Winter" Or eventName = "Christmas Day" Or eventName = "Autumn (Fall)" Or eventName = "Halloween" Or eventName = "Valentine's Day" Or eventName = "April's Birthday" Or eventName = "Easter" Or eventName = "Thanksgiving Day" Then
         ExtraEffects = "_ExtraEffects"
     End If
 
