@@ -149,7 +149,7 @@
         Msg = "Lincoln" Or
         Msg = "Washington" Then
 
-        ogTitle = Msg + "'s Birthday"
+        ogTitle = "Days until " + Msg + "'s Birthday"
         ogDescription = "Countdown until the BIG Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -166,7 +166,7 @@
         Msg = "Thanksgiving" Or
         Msg = "Halloween" Then
 
-        ogTitle = Msg + " Day"
+        ogTitle = "Days until " + Msg + " Day"
         ogDescription = "Countdown until " + Msg + " Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -194,7 +194,7 @@
     End If
     If Msg = "New Years" Then
 
-        ogTitle = "New Year's Day"
+        ogTitle = "Days until New Year's Day"
         ogDescription = "Countdown until New Year's Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -203,7 +203,7 @@
     End If
     If Msg = "Valentines" Then
 
-        ogTitle = "Valentine's Day"
+        ogTitle = "Days until Valentine's Day"
         ogDescription = "Countdown until Valentine's Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -212,7 +212,7 @@
     End If
     If Msg = "Presidents" Then
 
-        ogTitle = "President's Day"
+        ogTitle = "Days until President's Day"
         ogDescription = "Countdown until President's Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -221,7 +221,7 @@
     End If
     If Msg = "Mothers" Then
 
-        ogTitle = "Mother's Day"
+        ogTitle = "Days until Mother's Day"
         ogDescription = "Countdown until Mother's Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -230,7 +230,7 @@
     End If
     If Msg = "Fathers" Then
 
-        ogTitle = "Father's Day"
+        ogTitle = "Days until Father's Day"
         ogDescription = "Countdown until Father's Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
@@ -239,7 +239,7 @@
     End If
     If Msg = "Elections" Then
 
-        ogTitle = "Election Day"
+        ogTitle = "Days until Election Day"
         ogDescription = "Countdown until Election Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
