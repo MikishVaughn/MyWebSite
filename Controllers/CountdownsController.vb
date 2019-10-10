@@ -82,6 +82,13 @@
     End Function
 
     <HttpGet>
+    Function MikePinkerton() As ActionResult
+        ViewData("Message") = "MikePinkerton"
+        ViewData("PageHeader") = "Birthday Countdown..."
+        Return View("_Countdown")
+    End Function
+
+    <HttpGet>
     Function Mary() As ActionResult
         ViewData("Message") = "Mary"
         ViewData("PageHeader") = "Birthday Countdown..."

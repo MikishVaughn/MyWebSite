@@ -109,6 +109,9 @@
         If eventName = "Terry" Then
             eventName = "Terry's Birthday"
         End If
+        If eventName = "MikePinkerton" Then
+            eventName = "Mike's Birthday"
+        End If
         If eventName = "Lincoln" Then
             eventName = "Lincoln's Birthday"
         End If

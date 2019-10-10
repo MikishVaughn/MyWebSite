@@ -141,6 +141,8 @@ Public Class Countdowns
                 Return CStr(eventYear) + "-02-05T00:00:00"
             Case "Terry"
                 Return CStr(eventYear) + "-09-22T00:00:00"
+            Case "MikePinkerton"
+                Return CStr(eventYear) + "-11-02T00:00:00"
 
         End Select
 
