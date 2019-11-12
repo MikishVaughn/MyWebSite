@@ -26,8 +26,9 @@ Public Class Countdowns
         Dim UtcSeasonDate As Date
         Dim UtcSeasonDateString As String
         Dim tz_Offset As Integer = -1
+        Dim midnight As String = "T00:00:00"
 
-        ' Seasons - (Date is Calculated)
+        ' Seasons - (Date-time is Calculated)
         Select Case eventName
             Case "Spring"
                 UtcSeasonDate = GetUtcSeasonDate("Spring", eventYear, tz_Offset)
@@ -50,29 +51,35 @@ Public Class Countdowns
         ' Holidays - (Date is Fixed)
         Select Case eventName
             Case "New Years"
-                Return CStr(eventYear) + "-01-01T00:00:00"
+                Return CStr(eventYear) + "-01-01" + midnight
             Case "Legalization"
-                Return CStr(eventYear) + "-01-01T00:00:00"
+                Return CStr(eventYear) + "-01-01" + midnight
             Case "Valentines"
-                Return CStr(eventYear) + "-02-14T00:00:00"
+                Return CStr(eventYear) + "-02-14" + midnight
             Case "Independence"
-                Return CStr(eventYear) + "-07-04T00:00:00"
+                Return CStr(eventYear) + "-07-04" + midnight
             Case "Veterans"
-                Return CStr(eventYear) + "-11-11T00:00:00"
+                Return CStr(eventYear) + "-11-11" + midnight
             Case "Halloween"
-                Return CStr(eventYear) + "-10-31T00:00:00"
-            Case "Elections"
-                Return CStr(2020) + "-11-03T00:00:00"
+                Return CStr(eventYear) + "-10-31" + midnight
             Case "Christmas"
-                Return CStr(eventYear) + "-12-25T00:00:00"
+                Return CStr(eventYear) + "-12-25" + midnight
+
+            Case "Elections"
+                'Return CStr(2020) + "-11-03" + midnight
+                Return GetEventDate(11, 1, 3)
+
         End Select
 
         ' Holidays - (Date is Calculated)
         Select Case eventName
+
             Case "Easter"
-                Return CStr(GetEasterDate.Year) + "-" + Right("00" + CStr(GetEasterDate.Month), 2) + "-" + Right("00" + CStr(GetEasterDate.Day), 2) + "T00:00:00"
+                Return CStr(GetEasterDate.Year) + "-" + Right("00" + CStr(GetEasterDate.Month), 2) + "-" + Right("00" + CStr(GetEasterDate.Day), 2) + "" + midnight
+
+            ' Month, Week, Day (Sun = 1)
             Case "Mothers"
-                Return GetEventDate(5, 2, 1) 'Month, Week, Day (Sun = 1)
+                Return GetEventDate(5, 2, 1)
             Case "Fathers"
                 Return GetEventDate(6, 3, 1)
             Case "Memorial"
@@ -90,64 +97,64 @@ Public Class Countdowns
         ' Birthdays - Presidents - (Date is Fixed)
         Select Case eventName
             Case "Lincoln"
-                Return CStr(eventYear) + "-02-12T00:00:00"
+                Return CStr(eventYear) + "-02-12" + midnight
             Case "Washington"
-                Return CStr(eventYear) + "-02-22T00:00:00"
+                Return CStr(eventYear) + "-02-22" + midnight
             Case "Jefferson"
-                Return CStr(eventYear) + "-04-13T00:00:00"
+                Return CStr(eventYear) + "-04-13" + midnight
         End Select
 
         ' Birthdays - Military - (Date is Fixed)
         Select Case eventName
             Case "Army"
-                Return CStr(eventYear) + "-06-14T00:00:00"
+                Return CStr(eventYear) + "-06-14" + midnight
             Case "AirForce"
-                Return CStr(eventYear) + "-09-18T00:00:00"
+                Return CStr(eventYear) + "-09-18" + midnight
             Case "Navy"
-                Return CStr(eventYear) + "-10-13T00:00:00"
+                Return CStr(eventYear) + "-10-13" + midnight
             Case "MarineCorp"
-                Return CStr(eventYear) + "-11-10T00:00:00"
+                Return CStr(eventYear) + "-11-10" + midnight
             Case "NationalGuard"
-                Return CStr(eventYear) + "-12-13T00:00:00"
+                Return CStr(eventYear) + "-12-13" + midnight
         End Select
 
         ' Birthdays - Friends - (Date is Fixed)
         Select Case eventName
             Case "Aleda"
-                Return CStr(eventYear) + "-10-01T00:00:00"
+                Return CStr(eventYear) + "-10-01" + midnight
             Case "April"
-                Return CStr(eventYear) + "-03-27T00:00:00"
+                Return CStr(eventYear) + "-03-27" + midnight
             Case "Melissa"
-                Return CStr(eventYear) + "-12-08T00:00:00"
+                Return CStr(eventYear) + "-12-08" + midnight
             Case "Bridget"
-                Return CStr(eventYear) + "-06-15T00:00:00"
+                Return CStr(eventYear) + "-06-15" + midnight
             Case "PattyKake"
-                Return CStr(eventYear) + "-06-24T00:00:00"
+                Return CStr(eventYear) + "-06-24" + midnight
             Case "Tina"
-                Return CStr(eventYear) + "-01-27T00:00:00"
+                Return CStr(eventYear) + "-01-27" + midnight
             Case "Mary"
-                Return CStr(eventYear) + "-02-18T00:00:00"
+                Return CStr(eventYear) + "-02-18" + midnight
             Case "Mike"
-                Return CStr(eventYear) + "-03-31T00:00:00"
+                Return CStr(eventYear) + "-03-31" + midnight
             Case "Fred"
-                Return CStr(eventYear) + "-05-04T00:00:00"
+                Return CStr(eventYear) + "-05-04" + midnight
             Case "Steve"
-                Return CStr(eventYear) + "-10-04T00:00:00"
+                Return CStr(eventYear) + "-10-04" + midnight
             Case "Patricia"
-                Return CStr(eventYear) + "-05-26T00:00:00"
+                Return CStr(eventYear) + "-05-26" + midnight
             Case "Heidi"
-                Return CStr(eventYear) + "-06-09T00:00:00"
+                Return CStr(eventYear) + "-06-09" + midnight
             Case "Stacy"
-                Return CStr(eventYear) + "-02-05T00:00:00"
+                Return CStr(eventYear) + "-02-05" + midnight
             Case "Terry"
-                Return CStr(eventYear) + "-09-22T00:00:00"
+                Return CStr(eventYear) + "-09-22" + midnight
             Case "MikePinkerton"
-                Return CStr(eventYear) + "-11-02T00:00:00"
+                Return CStr(eventYear) + "-11-02" + midnight
 
         End Select
 
-        ' Return a default Date if target Date not found in .XML table (Shouldn't happen) '
-        Return "2019-03-31T00:00:00" ' No Error Checking... :-(
+        ' Return a default Date if target Date not found (Shouldn't happen) '
+        Return "2019-03-31" + midnight ' No Error Checking... but then... "we" screwed up! :-(
 
     End Function
 
