@@ -52,8 +52,8 @@ Public Class Countdowns
         Select Case eventName
             Case "New Years"
                 Return CStr(eventYear) + "-01-01" + midnight
-            Case "Legalization"
-                Return CStr(eventYear) + "-01-01" + midnight
+            'Case "Legalization"
+            '    Return CStr(eventYear) + "-01-01" + midnight
             Case "Valentines"
                 Return CStr(eventYear) + "-02-14" + midnight
             Case "Independence"

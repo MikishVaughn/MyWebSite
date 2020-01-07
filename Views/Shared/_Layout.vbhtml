@@ -140,7 +140,6 @@
         Msg = "Stacy" Or
         Msg = "Patricia" Or
         Msg = "Terry" Or
-        Msg = "MikePinkerton" Or
         Msg = "Army" Or
         Msg = "Navy" Or
         Msg = "AirForce" Or
@@ -157,21 +156,26 @@
         ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
 
     End If
+
+    ' Shorten the ogTitle for Mike's name.
     If Msg = "MikePinkerton" Then
+
         ogTitle = "Days until Mike's Birthday"
         ogDescription = "Countdown until the BIG Day!"
         backgroundColor = "black"
         canonical = siteURL + "/Countdowns/" + Msg
         ogImage = SiteHelpers.GetImageLocation() + "Categories/Countdowns/" + Msg + ".jpg"
+
     End If
+
     ' Holidays
     If Msg = "Easter" Or
-Msg = "Memorial" Or
-Msg = "Independence" Or
-Msg = "Labor" Or
-Msg = "Christmas" Or
-Msg = "Thanksgiving" Or
-Msg = "Halloween" Then
+        Msg = "Memorial" Or
+        Msg = "Independence" Or
+        Msg = "Labor" Or
+        Msg = "Christmas" Or
+        Msg = "Thanksgiving" Or
+        Msg = "Halloween" Then
 
         ogTitle = "Days until " + Msg + " Day"
         ogDescription = "Countdown until " + Msg + " Day!"

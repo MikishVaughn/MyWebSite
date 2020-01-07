@@ -84,9 +84,9 @@
             <li class="nav-line">
                 <a class="nav-item aside-nav-item" href="~/countdowns/Elections">Election</a>
             </li>
-            <li class="nav-line">
+            @*<li class="nav-line">
                 <a class="nav-item1 aside-nav-item" href="~/countdowns/Legalization">Legalization</a>
-            </li>
+            </li>*@
         </ul>
     </nav>
 </div>
