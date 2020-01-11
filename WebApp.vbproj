@@ -627,6 +627,7 @@
     <Content Include="Views\Shared\_Menu.vbhtml" />
     <Content Include="Views\Shared\_Nothing.vbhtml" />
     <Content Include="Views\Shared\Aside\_Aside_Holidays_Legalization.vbhtml" />
+    <Content Include="Views\Info\Cody.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -664,6 +665,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Misc\Cody\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
