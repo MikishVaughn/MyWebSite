@@ -15,10 +15,13 @@ End Code
         background-color: transparent;
         text-decoration: none;
         text-decoration-line: none;
-        border: none;
         color: black;
         text-shadow: 0 0 1px burlywood;
         border: solid thin transparent;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         padding-left: 10px;
     }
 
@@ -30,12 +33,7 @@ End Code
             color: white;
             text-shadow: 0 0 1px #602c06;
             background-color: burlywood;
-            border: solid thin #602c06;
-            border-right: none;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            border: solid thin #602c06; 
         }
 
 </style>
@@ -59,7 +57,7 @@ End Code
 
             </ul>
 
-            <h6 class="links-menu__header" style="padding-top: 10px; padding-bottom: 10px;">Misc. Movies</h6>
+            <h6 class="links-menu__header" style="padding-top: 15px; padding-bottom: 10px;">Misc. Movies</h6>
             <ul>
                 <li class="links-menu__item">
                     <a id="openTab" href="~/Content/Misc/Cody/Time.Bandits.zip">Time Bandits (10.8 GB)</a>
@@ -68,6 +66,7 @@ End Code
             </ul>
 
         </div>
+
         @*<div Class="links-menu__module">
             
         </div>*@
