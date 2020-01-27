@@ -70,7 +70,7 @@ Public Class SiteHelpers
             End If
         End If
 
-        If siteURL.Contains("mikish.com") Then
+        If siteURL.Contains("mikish.com") Or siteURL.Contains("bluesun.") Then
             If AttributeName = "SiteName" Or AttributeName = "SiteDesigner" Then
                 Return "The Mikish Group"
             End If
@@ -238,7 +238,7 @@ Public Class SiteHelpers
             Return IO.Directory.GetFiles("D:\Hosting\10402494\html\Content\Images\Categories\" + Msg, "*.jpg").Length()
 
         Catch ex As Exception
-            Return 1
+            Return 30
             Throw
             'MsgBox("Image Directory Not Found", MsgBoxStyle.Critical)
         End Try
