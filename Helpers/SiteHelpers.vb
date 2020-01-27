@@ -238,6 +238,7 @@ Public Class SiteHelpers
             Return IO.Directory.GetFiles("D:\Hosting\10402494\html\Content\Images\Categories\" + Msg, "*.jpg").Length()
 
         Catch ex As Exception
+            Return 1
             Throw
             'MsgBox("Image Directory Not Found", MsgBoxStyle.Critical)
         End Try

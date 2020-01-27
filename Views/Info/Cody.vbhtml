@@ -38,7 +38,7 @@ End Code
 
 </style>
 
-<div id="site-menu" class="site-menu" role="contentinfo" aria-label="Site menu">
+@*<div id="site-menu" class="site-menu" role="contentinfo" aria-label="Site menu">
 
     <div class="goldGradient">
         <br />
@@ -458,4 +458,5 @@ End Code
 
         </div>
     </div>
-</div>
+
+</div>*@
