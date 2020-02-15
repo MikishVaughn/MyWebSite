@@ -38,7 +38,7 @@ End Code
 
 </style>
 
-@*<div id="site-menu" class="site-menu" role="contentinfo" aria-label="Site menu">
+<div id="site-menu" class="site-menu" role="contentinfo" aria-label="Site menu">
 
     <div class="goldGradient">
         <br />
@@ -46,7 +46,7 @@ End Code
         <br />
     </div>    
 
-    <div class="site-menu__module-group" data-metrics-category="Page Menu" data-metrics-label="Menu" style="padding-left: 20px; padding-top: 15px;">
+    @*<div class="site-menu__module-group" data-metrics-category="Page Menu" data-metrics-label="Menu" style="padding-left: 20px; padding-top: 15px;">
         <br />
         <div Class="links-menu__module">
             <h6 class="links-menu__header">Training Videos</h6>
@@ -455,8 +455,7 @@ End Code
                 </li>
             </ul>
 
-
         </div>
-    </div>
+    </div>*@
 
-</div>*@
+</div>

@@ -45,10 +45,10 @@ Public Class SiteHelpers
                 Return "http://LakeCatatoga.com"
             End If
             If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish@LakeCatatoga.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteEmail_Support" Then
-                Return "Support@LakeCatatoga.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteFacebookPageURL" Then
                 Return "https://Facebook.com/LakeCatatoga"
@@ -78,10 +78,10 @@ Public Class SiteHelpers
                 Return "http://Mikish.com"
             End If
             If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish@Mikish.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteEmail_Support" Then
-                Return "Support@Mikish.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteFacebookPageURL" Then
                 Return "https://Facebook.com/MikishGroup"
@@ -111,10 +111,10 @@ Public Class SiteHelpers
                 Return "http://ScentMe.com"
             End If
             If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish@ScentMe.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteEmail_Support" Then
-                Return "Support@ScentMe.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteFacebookPageURL" Then
                 Return "https://www.facebook.com/pages/Scent-Me/1640971506116388"
@@ -144,10 +144,10 @@ Public Class SiteHelpers
                 Return "http://LakeCatatoga.com"
             End If
             If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish@LakeCatatoga.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteEmail_Support" Then
-                Return "Support@LakeCatatoga.com"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteFacebookPageURL" Then
                 Return "https://Facebook.com/LakeCatatoga"
@@ -177,10 +177,10 @@ Public Class SiteHelpers
                 Return "http://Illustrate.net"
             End If
             If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish@Illustrate.net"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteEmail_Support" Then
-                Return "Support@Illustrate.net"
+                Return "MikishVaughn@Gmail.com"
             End If
             If AttributeName = "SiteFacebookPageURL" Then
                 Return "https://Facebook.com/IllustrateNet"
