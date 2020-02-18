@@ -23,7 +23,7 @@
                 <a class="nav-item1 aside-nav-item" href="~/countdowns/Valentines">Valentine's</a>
             </li>
             <li class="nav-line">
-                <a class="nav-item1 aside-nav-item" href="~/countdowns/Presidents">President's</a>
+                <a class="nav-item1 aside-nav-item" href="~/countdowns/Presidents">Presidents</a>
             </li>
         </ul>
     </nav>

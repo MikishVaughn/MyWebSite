@@ -48,7 +48,7 @@
             eventName = "Martin Luther King Jr"
         End If
         If eventName = "Presidents" Then
-            eventName = "President's Day"
+            eventName = "Presidents Day"
         End If
         If eventName = "Labor" Then
             eventName = "Labor Day"

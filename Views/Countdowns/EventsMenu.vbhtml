@@ -46,7 +46,7 @@ End Code
                     @*<li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Legalization">Legalization</a></li>*@
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/MartinLutherKing">M.L. King Jr</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Valentines">Valentine Day</a></li>
-                    <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Presidents">President Day</a></li>
+                    <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Presidents">Presidents</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Easter">Easter</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Mothers">Mother's Day</a></li>
                     <li class="countdowns-menu__item"><a class="nav-link" href="~/countdowns/Memorial">Memorial Day</a></li>
