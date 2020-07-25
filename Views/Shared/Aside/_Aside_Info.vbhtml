@@ -12,13 +12,13 @@
     }
 </style>
 
-<div class="rightAlign" id="show" style="margin-right: 15px;">
+@*<div class="rightAlign" id="show" style="margin-right: 15px;">
     <p>
         <b><i>Show Website Technical Notes: </i></b><img style="width:26px;height:26px;"src="~/Content/XML/Svg/Site/Info.svg" />
     </p>
-</div>
+</div>*@
 
-<div id="Info">
+@*<div id="Info">
     <div class="rightAlign" id="hide">
         <p><b><i>Hide Website Technical Notes: </i></b><img style="height:26px; width:26px;" src="~/Content/XML/Svg/Site/Info.svg" />
         </p>
@@ -51,4 +51,4 @@
         $("#hide").click(function () { $("#Info").hide(1000); $("#show").show(1000) });
         $("#show").click(function () { $("#Info").show(1000); $("#show").hide(1000) });
     });
-</script>
+</script>*@
