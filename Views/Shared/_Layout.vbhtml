@@ -335,7 +335,7 @@ End Code
 <body style="background-color: black; overflow-y: scroll;">
 
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    @*<div id="fb-root"></div>
     <script>
     (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -345,7 +345,7 @@ End Code
             js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=@fbAppID&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script>*@
 
     @Html.Partial("_Header")
 
