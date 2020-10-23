@@ -58,15 +58,7 @@
             ViewData("PageTitle") = ViewData("PageHeader")
             Return View()
         End Function
-
-        <HttpGet>
-        Function Deploy() As ActionResult
-            ViewData("Message") = "Deploy Links"
-            ViewData("PageHeader") = CType(ViewData("Message"), String) + " " + SiteHelpers.GetSiteInfo("SiteName")
-            ViewData("PageTitle") = ViewData("PageHeader")
-            Return View()
-        End Function
-
+       
     End Class
 
 End Namespace
