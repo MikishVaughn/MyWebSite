@@ -43,8 +43,8 @@ End Code
         <div class="images-menu__item">
             <h6 class="site-menu__header @choice04"><a class="nav-link" href="~/images/Jokes">Steve's Old Joke Home</a></h6>
         </div>
-        <div class="images-menu__item">
+        @*<div class="images-menu__item">
             <h6 class="site-menu__header @choice05"><a class="nav-link" href="~/images/NSFW">NSFW</a></h6>
-        </div>
+        </div>*@
     </div>
 </div>

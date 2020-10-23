@@ -60,8 +60,8 @@
         End Function
 
         <HttpGet>
-        Function Cody() As ActionResult
-            ViewData("Message") = "Cody's Links"
+        Function Deploy() As ActionResult
+            ViewData("Message") = "Deploy Links"
             ViewData("PageHeader") = CType(ViewData("Message"), String) + " " + SiteHelpers.GetSiteInfo("SiteName")
             ViewData("PageTitle") = ViewData("PageHeader")
             Return View()
