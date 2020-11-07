@@ -17,9 +17,9 @@
     If ViewData("message") = "Jokes" Then
         choice04 = "active"
     End If
-    If ViewData("message") = "NSFW" Then
-        choice05 = "active"
-    End If
+    'If ViewData("message") = "NSFW" Then
+    '    choice05 = "active"
+    'End If
 End Code
 
 <div id="site-menu" class="site-menu" role="contentinfo" aria-label="Site menu">

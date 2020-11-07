@@ -194,12 +194,12 @@
         Return View("_Countdown")
     End Function
 
-    <HttpGet>
-    Function Elections() As ActionResult
-        ViewData("Message") = "Elections"
-        ViewData("PageHeader") = "Countdown..."
-        Return View("_Countdown")
-    End Function
+    '<HttpGet>
+    'Function Elections() As ActionResult
+    '    ViewData("Message") = "Elections"
+    '    ViewData("PageHeader") = "Countdown..."
+    '    Return View("_Countdown")
+    'End Function
 
     <HttpGet>
     Function Christmas() As ActionResult

@@ -130,12 +130,12 @@
         showLike = ""
         asideContent = "Aside/_Aside_Humor_" + msg
     End If
-    If msg = "NSFW" Then
-        showContent = ""
-        showMain = "HIDDEN"
-        showLike = ""
-        asideContent = "Aside/_Aside_Humor_" + msg
-    End If
+    'If msg = "NSFW" Then
+    '    showContent = ""
+    '    showMain = "HIDDEN"
+    '    showLike = ""
+    '    asideContent = "Aside/_Aside_Humor_" + msg
+    'End If
 
     ' Photos
     If msg = "Sunsets" Then

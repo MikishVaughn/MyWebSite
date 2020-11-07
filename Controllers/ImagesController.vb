@@ -89,13 +89,13 @@
         Return View("_Images")
     End Function
 
-    <HttpGet>
-    Function NSFW() As ActionResult
-        ViewData("Message") = "NSFW"
-        ViewData("PageHeader") = "NSFW Humor"
-        ViewData("PageTitle") = "NSFW Humor"
-        Return View("_Images")
-    End Function
+    '<HttpGet>
+    'Function NSFW() As ActionResult
+    '    ViewData("Message") = "NSFW"
+    '    ViewData("PageHeader") = "NSFW Humor"
+    '    ViewData("PageTitle") = "NSFW Humor"
+    '    Return View("_Images")
+    'End Function
 
     <HttpGet>
     Function Totempole() As ActionResult
