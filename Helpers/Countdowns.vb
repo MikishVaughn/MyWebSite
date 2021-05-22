@@ -83,7 +83,10 @@ Public Class Countdowns
             Case "Fathers"
                 Return GetEventDate(6, 3, 1)
             Case "Memorial"
-                Return GetEventDate(5, 4, 2)
+                'Memorial Day is usually the 4 Monday of the Month,
+                'but sometimes it is the 5th Monday. The Replace catches
+                'those times and returns the correct date.
+                Return Replace(GetEventDate(5, 4, 2), "05-24", "05-31")
             Case "Labor"
                 Return GetEventDate(9, 1, 2)
             Case "Thanksgiving"
